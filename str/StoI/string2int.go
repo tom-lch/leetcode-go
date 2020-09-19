@@ -8,7 +8,7 @@ import (
 )
 
 func MyAtoi(str string) int {
-	if str[0] > '9' || str[0] < '0' {
+	if str == "" {
 		return 0
 	}
 	r := regexp.MustCompile(`[0-9]+`)
